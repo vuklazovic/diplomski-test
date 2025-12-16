@@ -86,31 +86,35 @@ body {
   flex-shrink: 0;
 }
 
-/* Tiles Section - Infinite Horizontal Scroll */
+/* Tiles Section - Drag Horizontal Scroll */
 .tiles-section {
   background-color: #f0f0f0;
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
   position: relative;
   padding: 0;
+  cursor: grab;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.tiles-section::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.tiles-section:active {
+  cursor: grabbing;
 }
 
 .tiles-container {
   display: flex;
   width: max-content;
-  animation: scroll 40s linear infinite;
+  cursor: grab;
+  user-select: none;
 }
 
-.tiles-container:hover {
-  animation-play-state: paused;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+.tiles-container:active {
+  cursor: grabbing;
 }
 
 .tile {
