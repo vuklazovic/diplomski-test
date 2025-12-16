@@ -262,7 +262,7 @@ body {
 /* News Section */
 .news-section {
   padding: 40px 20px;
-  background-color: #E8F0F8;
+  background: linear-gradient(180deg, #5B9BD5 0%, #4682B4 100%);
 }
 
 .news-grid {
