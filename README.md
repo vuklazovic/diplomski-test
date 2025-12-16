@@ -1,21 +1,68 @@
-# React + TypeScript + Vite
+# Institut za Matematiku i Informatiku - Website Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A Vite-based recreation of the IMI (Institut za Matematiku i Informatiku) website with an infinite horizontal scrolling tile section.
 
-While this project uses React, Vite supports many popular JS frameworks. [See all the supported frameworks](https://vitejs.dev/guide/#scaffolding-your-first-vite-project).
+## Features
 
-## Deploy Your Own
+- **Responsive Header**: Blue gradient header with institute branding and navigation
+- **Infinite Horizontal Scroll**: 13 colored tiles that automatically scroll in an endless loop
+- **News Section**: Grid layout with latest news and blog articles
+- **Smooth Animations**: Hover effects and transitions throughout
+- **Pause on Hover**: Tile carousel pauses when you hover over it
 
-Deploy your own Vite project with Vercel.
+## Installation
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/framework-boilerplates/vite-react&template=vite-react)
-
-_Live Example: https://vite-react-example.vercel.app_
-
-### Deploying From Your Terminal
-
-You can deploy your new Vite project with a single command from your terminal using [Vercel CLI](https://vercel.com/download):
-
-```shell
-$ vercel
+```bash
+npm install
 ```
+
+## Development
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:5173/](http://localhost:5173/) in your browser.
+
+## Build for Production
+
+```bash
+npm run build
+```
+
+## Preview Production Build
+
+```bash
+npm preview
+```
+
+## Structure
+
+- `index.html` - Main HTML structure
+- `style.css` - All styling and animations
+- `main.js` - Infinite scroll JavaScript logic
+- `package.json` - Project dependencies
+
+## Technologies
+
+- Vite
+- Vanilla JavaScript
+- CSS3 Animations
+- HTML5
+
+## Tiles
+
+The carousel includes tiles for:
+- Upis (Enrollment)
+- Matematika (Mathematics)
+- Informatika (Computer Science)
+- Skripte (Study Materials)
+- Rasporedi (Schedules)
+- Oglasna tabla (Bulletin Board)
+- Nastavnici i saradnici (Faculty)
+- Alumni
+- Vesti (News)
+- E-prijava (E-Application)
+- Nastavnički portal (Teaching Portal)
+- Blog
+- Stručna praksa (Internships)

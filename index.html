@@ -1,13 +1,175 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Institut za Matematiku i Informatiku</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="top-nav">
+      <div class="nav-left">
+        <a href="#" class="nav-icon">🏠</a>
+        <a href="#">Studije ▾</a>
+      </div>
+      <div class="nav-center">
+        <a href="#">O nama ▾</a>
+        <a href="#">Info ▾</a>
+        <a href="#">Stablo-tički servis ▾</a>
+        <a href="#">Istraživanje i razvoj ▾</a>
+        <a href="#">Kontakt</a>
+      </div>
+      <div class="nav-right">
+        <a href="#" class="user-link">Korisnički nalog 👤</a>
+      </div>
+    </nav>
+    
+    <div class="header-content">
+      <div class="logo">
+        <svg width="60" height="80" viewBox="0 0 60 80">
+          <circle cx="20" cy="20" r="18" fill="#FFA500"/>
+          <rect x="45" y="10" width="12" height="60" fill="#4169E1" rx="6"/>
+          <rect x="10" y="50" width="12" height="25" fill="#4169E1" rx="6"/>
+        </svg>
+      </div>
+      
+      <div class="title-section">
+        <h1>INSTITUT ZA MATEMATIKU I INFORMATIKU</h1>
+        <p>PRIRODNO-MATEMATIČKI FAKULTET, UNIVERZITET U KRAGUJEVCU</p>
+      </div>
+      
+      <div class="university-seal">
+        <svg width="80" height="80" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="45" fill="none" stroke="white" stroke-width="2"/>
+          <circle cx="50" cy="50" r="35" fill="white" opacity="0.3"/>
+          <text x="50" y="55" font-size="12" fill="white" text-anchor="middle" font-weight="bold">PMF</text>
+        </svg>
+      </div>
+    </div>
+  </header>
+
+  <section class="tiles-section">
+    <div class="tiles-container" id="tilesContainer">
+      <div class="tile tile-red">
+        <div class="tile-icon">📝</div>
+        <div class="tile-label">Upis</div>
+      </div>
+      <div class="tile tile-lightblue">
+        <div class="tile-icon">📐</div>
+        <div class="tile-label">Matematika</div>
+      </div>
+      <div class="tile tile-green">
+        <div class="tile-icon">💻</div>
+        <div class="tile-label">Informatika</div>
+      </div>
+      <div class="tile tile-cyan">
+        <div class="tile-icon">📚</div>
+        <div class="tile-label">Skripte</div>
+      </div>
+      <div class="tile tile-darkblue">
+        <div class="tile-icon">📅</div>
+        <div class="tile-label">Rasporedi</div>
+      </div>
+      <div class="tile tile-lightcyan">
+        <div class="tile-icon">📋</div>
+        <div class="tile-label">Oglasna tabla</div>
+      </div>
+      <div class="tile tile-navyblue">
+        <div class="tile-icon">👥</div>
+        <div class="tile-label">Nastavnici i saradnici</div>
+      </div>
+      <div class="tile tile-yellow">
+        <div class="tile-icon">🎓</div>
+        <div class="tile-label">Alumni</div>
+      </div>
+      <div class="tile tile-orange">
+        <div class="tile-icon">📰</div>
+        <div class="tile-label">Vesti</div>
+      </div>
+      <div class="tile tile-burgundy">
+        <div class="tile-icon">📱</div>
+        <div class="tile-label">E-prijava</div>
+      </div>
+      <div class="tile tile-lightorange">
+        <div class="tile-icon">🖥️</div>
+        <div class="tile-label">Nastavnički portal</div>
+      </div>
+      <div class="tile tile-lightgreen">
+        <div class="tile-icon">✍️</div>
+        <div class="tile-label">Blog</div>
+      </div>
+      <div class="tile tile-crimson">
+        <div class="tile-icon">🚀</div>
+        <div class="tile-label">Stručna praksa</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="news-section">
+    <div class="news-grid">
+      <article class="news-card">
+        <div class="card-header card-header-blue">
+          <span class="card-label">Vesti</span>
+        </div>
+        <div class="card-content">
+          <img src="https://via.placeholder.com/250x150/4169E1/FFFFFF?text=Varius" alt="News">
+          <h3>GOSTUJUĆE PREDAVANJE - IT KOMPANIJA VARIUS</h3>
+          <p>Gostujuće predavanje koje spaja znanje, praksu i konkretne prilike za studente!</p>
+          <div class="card-footer">
+            <button class="read-more">Detaljnije</button>
+            <span class="card-date">utorak, 9. decembar 2025 12:47</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="card-header card-header-orange">
+          <span class="card-label">Blog</span>
+        </div>
+        <div class="card-content">
+          <img src="https://via.placeholder.com/250x150/FF8C00/FFFFFF?text=Kubernetes" alt="News">
+          <h3>Kubernetes umrežavanje</h3>
+          <p>Umrežavanje u Kubernetes okruženju je prilično kompleksna tema. Za samo 30 minuta, ovaj članak će vam kroz praktične primere pružiti osnovna znanja...</p>
+          <div class="card-footer">
+            <button class="read-more">Detaljnije</button>
+            <span class="card-date">ponedeljak, 4. decembar 2023 11:46</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="card-header card-header-blue">
+          <span class="card-label">Vesti</span>
+        </div>
+        <div class="card-content">
+          <img src="https://via.placeholder.com/250x150/4169E1/FFFFFF?text=PSIML" alt="News">
+          <h3>PSIML Turneja 2025</h3>
+          <p>PSIML (Practical Seminar in Machine Learning) zajednica organizuje predavanje na temu state-of-the-art AI modelima sa akcentom na praktičnim primerima...</p>
+          <div class="card-footer">
+            <button class="read-more">Detaljnije</button>
+            <span class="card-date">ponedeljak, 24. novembar 2025 9:15</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="card-header card-header-blue">
+          <span class="card-label">Vesti</span>
+        </div>
+        <div class="card-content">
+          <img src="https://via.placeholder.com/250x150/4169E1/FFFFFF?text=Rezultati" alt="News">
+          <h3>Preliminarni rezultati prijemnih ispita na master akademske studije</h3>
+          <p>Rezultate prijemnog ispita na MAS Informatike i MAS Matematike možete videti na zvaničnoj stranici instituta.</p>
+          <div class="card-footer">
+            <button class="read-more">Detaljnije</button>
+            <span class="card-date">četvrtak, 13. novembar 2025 8:36</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <script type="module" src="/main.js"></script>
+</body>
 </html>
